@@ -3,18 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>M. Rafiul Bahar Rafi | Portfolio</title>
-  <meta name="description" content="M. Rafiul Bahar Rafi: bioinformatics engineer and open-knowledge community builder from Dhaka, Bangladesh. Genomic pipelines, machine learning, and Wikimedia." />
-  <meta property="og:title" content="M. Rafiul Bahar Rafi | Portfolio" />
-  <meta property="og:description" content="I build, I speak. Bioinformatics engineer building reproducible genomic pipelines, ML tools, and open knowledge communities." />
+  <title>M. Rafiul Bahar Rafi</title>
+  <meta name="description" content="M. Rafiul Bahar Rafi builds genomic pipelines and machine-learning tools, and organizes communities that make knowledge free to use. Based in Dhaka, Bangladesh." />
+  <meta property="og:title" content="M. Rafiul Bahar Rafi" />
+  <meta property="og:description" content="Bioinformatics engineer and open-knowledge organizer from Dhaka, Bangladesh." />
   <meta property="og:image" content="assets/rafi.jpg" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2315211D'/%3E%3Cpath d='M4 22c3 0 3-12 6-12s3 12 6 12 3-12 6-12 3 12 6 12' fill='none' stroke='%234CC27F' stroke-width='2.4'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <script>
-    // set theme before paint to avoid a flash
     (function () {
       try {
         var t = localStorage.getItem('theme');
@@ -24,401 +23,309 @@
   </script>
 </head>
 <body>
-  <div class="progress" id="progress"></div>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <!-- NAV -->
-  <header class="nav">
-    <nav class="nav-inner container">
-      <a href="#top" class="nav-name">M. Rafiul Bahar Rafi</a>
-      <div class="nav-links">
-        <a href="#about">about</a>
-        <a href="#experience">experience</a>
-        <a href="#work">work</a>
-        <a href="#expertise">expertise</a>
-        <a href="#connect">connect</a>
-        <span class="nav-sep" aria-hidden="true"></span>
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="toggle dark mode">
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5 5l1.7 1.7M17.3 17.3 19 19M19 5l-1.7 1.7M6.7 17.3 5 19"/></svg>
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">M. Rafiul Bahar Rafi</a>
+      <nav class="nav" id="nav" aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#path">Path</a>
+        <a href="#about">About</a>
+        <a href="#toolkit">Toolkit</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to dark theme">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
         </button>
       </div>
-      <div class="nav-mobile-actions">
-        <button class="theme-toggle" id="themeToggleMobile" type="button" aria-label="toggle dark mode">
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5 5l1.7 1.7M17.3 17.3 19 19M19 5l-1.7 1.7M6.7 17.3 5 19"/></svg>
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        </button>
-        <button class="menu-btn" id="menuBtn" type="button" aria-label="open menu" aria-expanded="false">
-          <span></span><span></span>
-        </button>
-      </div>
-    </nav>
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#about">about</a>
-      <a href="#experience">experience</a>
-      <a href="#work">work</a>
-      <a href="#expertise">expertise</a>
-      <a href="#connect">connect</a>
     </div>
   </header>
 
-  <main id="top">
+  <main id="main">
     <!-- HERO -->
-    <section class="hero container">
-      <div class="hero-text">
-        <p class="hand hello">hello, i'm <span class="wave">👋</span></p>
-        <h1>M. Rafiul Bahar <span class="accent-word">Rafi</span></h1>
-        <p class="hand works">i build, i speak ✦</p>
-        <p class="lead">Bioinformatics engineer &amp; open-knowledge community builder. I build reproducible genomic pipelines and ML tools, and help people make knowledge free for everyone.</p>
-        <p class="mono meta">dhaka, bangladesh · <span id="clock">--:-- --</span> bst</p>
-
-        <div class="cta-row">
-          <a class="btn" href="mailto:mrbrafi1971@gmail.com">say hello 👋</a>
-          <a class="mail-link" href="mailto:mrbrafi1971@gmail.com">mrbrafi1971@gmail.com</a>
-          <span class="hand note">i actually reply</span>
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <h1>M. Rafiul Bahar Rafi</h1>
+          <p class="lede">I build genomic pipelines and machine-learning tools, and I organize communities that make knowledge free to use.</p>
+          <p class="sub">Final-year Bioinformatics Engineering student at Bangladesh Agricultural University, based in Dhaka.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="mailto:mrbrafi1971@gmail.com">Email me</a>
+            <a class="btn btn-quiet" href="https://www.linkedin.com/in/mrb-rafi/" target="_blank" rel="noopener">View LinkedIn</a>
+          </div>
         </div>
-
-        <div class="stack-row">
-          <span class="hand stack-label">my stack</span>
-          <span class="chip-ico" title="Python">Py</span>
-          <span class="chip-ico" title="Bash">$_</span>
-          <span class="chip-ico" title="Linux">🐧</span>
-          <span class="chip-ico" title="GATK / NGS">GATK</span>
-          <span class="chip-ico" title="R / DESeq2">R</span>
-          <span class="chip-ico" title="Machine Learning">ML</span>
-          <span class="chip-ico" title="Hugging Face">🤗</span>
-          <span class="chip-ico" title="Wikimedia">W</span>
-        </div>
-      </div>
-
-      <div class="hero-photo">
-        <div class="photo-ring">
+        <figure class="portrait">
+          <svg class="read-frame" aria-hidden="true">
+            <rect class="nt-a" /><rect class="nt-c" /><rect class="nt-g" /><rect class="nt-t" />
+          </svg>
           <img src="assets/rafi.jpg" alt="Portrait of M. Rafiul Bahar Rafi" width="640" height="800" />
-        </div>
-        <span class="photo-badge" title="ATCG">🧬</span>
+        </figure>
+      </div>
+      <div class="wrap">
+        <div class="trace" id="trace" aria-hidden="true"></div>
       </div>
     </section>
 
-    <!-- STATS -->
-    <section class="stats container reveal">
-      <div class="stat"><span class="stat-num"><span data-count="17000">0</span>+</span><span class="stat-label">media files via Project Korikath</span></div>
-      <div class="stat"><span class="stat-num"><span data-count="6">0</span>M+</span><span class="stat-label">views on our Wikimedia media</span></div>
-      <div class="stat"><span class="stat-num"><span data-count="4813">0</span></span><span class="stat-label">gene NGS panel analysed</span></div>
-      <div class="stat"><span class="stat-num"><span data-count="11">0</span></span><span class="stat-label">languages across our contributors</span></div>
+    <!-- WORK -->
+    <section class="section" id="work" aria-labelledby="work-h">
+      <div class="wrap">
+        <h2 id="work-h">Selected work</h2>
+        <p class="section-intro">Tools I&rsquo;ve built and projects I&rsquo;ve led, with what each one changed.</p>
+
+        <article class="project">
+          <div class="project-meta">
+            <p class="kind">Clinical genomics tool</p>
+            <p class="when">Invent Technologies, 2026</p>
+          </div>
+          <div class="project-body">
+            <h3>Target panel reporting engine</h3>
+            <p>Diagnostic reports for TruSight One panel runs were being formatted by hand. I wrote a Python command-line tool that reads the pipeline&rsquo;s metrics, coverage and VCF files and produces finished Word and PDF reports with CSV summaries.</p>
+            <dl class="facts">
+              <div><dt>My part</dt><dd>Design and build, end to end</dd></div>
+              <div><dt>Built with</dt><dd>Python, docxtpl, Jinja2, headless LibreOffice</dd></div>
+              <div><dt>Result</dt><dd>Report formatting no longer needs manual work</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-meta">
+            <p class="kind">Open-knowledge project</p>
+            <p class="when">Project Korikath, 2022&ndash;2025</p>
+          </div>
+          <div class="project-body">
+            <h3>Project Korikath</h3>
+            <p>A Wikimedia group I co-founded and led as strategic lead: multi-year growth plans, trust and safety guidance, and partnerships with contributors across 7&nbsp;countries and 11&nbsp;languages.</p>
+            <ul class="figures">
+              <li><strong>17,000+</strong> media files created</li>
+              <li><strong>3,000+</strong> Wikimedia pages using them</li>
+              <li><strong>6&nbsp;million+</strong> views</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-meta">
+            <p class="kind">Machine-learning web app</p>
+            <p class="when">Personal project</p>
+          </div>
+          <div class="project-body">
+            <h3>r_u_promoter</h3>
+            <p>Paste a DNA sequence and find out whether it&rsquo;s likely a promoter. An XGBoost classifier runs behind an interactive app on Hugging Face Spaces, and predictions are stored in MongoDB Atlas.</p>
+            <dl class="facts">
+              <div><dt>Built with</dt><dd>Python, XGBoost, Hugging Face Spaces, MongoDB Atlas</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-meta">
+            <p class="kind">Research</p>
+            <p class="when">Bangladesh Agricultural University</p>
+          </div>
+          <div class="project-body">
+            <h3>Forecasting rainfall with machine learning</h3>
+            <p>Co-authored a study comparing Random Forest, XGBoost, gated recurrent units and SARIMAX for estimating rainfall across regional weather stations, using a different missing-value strategy for each model.</p>
+            <dl class="facts">
+              <div><dt>Built with</dt><dd>Python, time-series models, model-specific imputation</dd></div>
+            </dl>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PATH: genome-browser timeline -->
+    <section class="section" id="path" aria-labelledby="path-h">
+      <div class="wrap">
+        <h2 id="path-h">The path so far</h2>
+        <p class="section-intro intro-browser">Read it like a genome browser: years run left to right, and each track is one side of my work. Select a bar to read about it.</p>
+        <p class="section-intro intro-list">Newest first. Blue marks genomics and study, green open knowledge, and amber ventures. Tap an entry to read more.</p>
+
+        <div class="browser" id="browser" hidden>
+          <div class="browser-scroll">
+            <div class="browser-canvas" id="browserCanvas"></div>
+          </div>
+          <div class="detail" id="detail" aria-live="polite"></div>
+        </div>
+
+        <ol class="path-list" id="pathList">
+          <li data-track="venture" data-start="2026-04" data-short="Stealth startup">
+            <details>
+              <summary><span class="org">Stealth startup</span><span class="role">Co-founder</span><span class="dates">Apr 2026 &ndash; present</span></summary>
+              <div class="item-body">
+                <p>Building a direct-to-consumer lifestyle brand where cultural documentation, narrative design and physical products meet.</p>
+                <ul>
+                  <li>Leading venture development from material sourcing and local supply chains to small-batch production.</li>
+                  <li>Directing brand positioning, visual identity and go-to-market strategy.</li>
+                </ul>
+              </div>
+            </details>
+          </li>
+          <li data-track="science" data-start="2026-06" data-end="2026-07" data-short="Invent Technologies">
+            <details>
+              <summary><span class="org">Invent Technologies Ltd.</span><span class="role">Bioinformatician</span><span class="dates">Jun &ndash; Jul 2026</span></summary>
+              <div class="item-body">
+                <ul>
+                  <li>Germline variant calling on Illumina MiSeq data (TruSight One, 4,813 genes, GRCh38) with BWA-MEM, Samtools, Picard and GATK HaplotypeCaller.</li>
+                  <li>Built the reporting engine that turns pipeline output into diagnostic Word and PDF reports.</li>
+                  <li>Analysed bacterial whole genomes (SPAdes, Prokka), 16S metagenomics (DADA2, SILVA), Sanger traces and bulk RNA-seq (DESeq2).</li>
+                  <li>Ran a Linux and Bash session and assessed clinical NGS workflows on site at the TMSS Biomolecular Lab, Bogura.</li>
+                </ul>
+              </div>
+            </details>
+          </li>
+          <li data-track="venture" data-start="2025-08" data-end="2026-09" data-short="UIHP">
+            <details>
+              <summary><span class="org">University Innovation Hub Program</span><span class="role">Entrepreneurship trainee</span><span class="dates">Aug 2025 &ndash; Sep 2026</span></summary>
+              <div class="item-body">
+                <p>Entrepreneurship training in Mymensingh. Alongside it, I led coordination of Build with AI Hack Days at BAU, hosted by the Department of Computer Science and Mathematics.</p>
+              </div>
+            </details>
+          </li>
+          <li data-track="community" data-start="2024-03" data-end="2025-09" data-short="Open Learning Collective">
+            <details>
+              <summary><span class="org">Open Learning Collective</span><span class="role">Student fellow</span><span class="dates">Mar 2024 &ndash; Sep 2025</span></summary>
+              <div class="item-body">
+                <p>Fellowship on open learning and open educational resources. I&rsquo;m also certified by the Open Knowledge Foundation to train people on Open Data Editor.</p>
+              </div>
+            </details>
+          </li>
+          <li data-track="community" data-start="2022-10" data-end="2025-02" data-short="WikiVibrance">
+            <details>
+              <summary><span class="org">WikiVibrance</span><span class="role">Core team member</span><span class="dates">Oct 2022 &ndash; Feb 2025</span></summary>
+              <div class="item-body">
+                <p>Youth advocacy inside the Wikimedia movement. I was the South Asia contact and community management specialist, and helped draft policy and set strategy.</p>
+              </div>
+            </details>
+          </li>
+          <li data-track="community" data-start="2022-09" data-end="2025-02" data-short="Project Korikath">
+            <details>
+              <summary><span class="org">Project Korikath</span><span class="role">Co-founder and strategic lead</span><span class="dates">Sep 2022 &ndash; Feb 2025</span></summary>
+              <div class="item-body">
+                <p>Grew a Wikimedia group to contributors from 7&nbsp;countries working in 11&nbsp;languages. Together we created 17,000+ media files, now used on 3,000+ Wikimedia pages with more than 6&nbsp;million views.</p>
+              </div>
+            </details>
+          </li>
+          <li data-track="community" data-start="2022-08" data-end="2023-06" data-short="WMF language consultant">
+            <details>
+              <summary><span class="org">Wikimedia Foundation</span><span class="role">Language consultant</span><span class="dates">Aug 2022 &ndash; Jun 2023</span></summary>
+              <div class="item-body">
+                <p>Translated and localized policy documents and community notices into Bangla.</p>
+              </div>
+            </details>
+          </li>
+          <li data-track="community" data-start="2022-05" data-end="2023-09" data-short="Leadership working group">
+            <details>
+              <summary><span class="org">Wikimedia Foundation</span><span class="role">Leadership Development Working Group</span><span class="dates">May 2022 &ndash; Sep 2023</span></summary>
+              <div class="item-body">
+                <p>The youngest member and one of two South Asian representatives. We defined what leadership means in the Wikimedia movement and wrote templates for local leadership programmes.</p>
+              </div>
+            </details>
+          </li>
+          <li data-track="science" data-start="2022-01" data-short="BSc Bioinformatics Eng., BAU">
+            <details>
+              <summary><span class="org">Bangladesh Agricultural University</span><span class="role">BSc Bioinformatics Engineering</span><span class="dates">Jan 2022 &ndash; present</span></summary>
+              <div class="item-body">
+                <p>Computer science, biomathematics, bioinformatics and computational biology, in the university&rsquo;s first Bioinformatics Engineering cohort.</p>
+              </div>
+            </details>
+          </li>
+          <li data-track="community" data-start="2021-12" data-end="2025-02" data-short="Reading Wikipedia trainer">
+            <details>
+              <summary><span class="org">Wikimedia Foundation</span><span class="role">Certified trainer, Reading Wikipedia in the Classroom</span><span class="dates">Dec 2021 &ndash; Feb 2025</span></summary>
+              <div class="item-body">
+                <p>Trained secondary-school teachers to use Wikipedia to build their students&rsquo; media and information literacy, after a training cohort with peers from 18&nbsp;countries. I also handle communication design and funding for the global trainer community.</p>
+              </div>
+            </details>
+          </li>
+          <li data-track="community" data-start="2020-02" data-short="NDEC Wikipedia team">
+            <details>
+              <summary><span class="org">Notre Dame English Club</span><span class="role">Founder and trainer, Wikipedia Editorial and Research Team</span><span class="dates">Feb 2020 &ndash; present</span></summary>
+              <div class="item-body">
+                <p>Brought the Wikimedia movement to my college and built its student editing team from nothing. The club gave me its Honorary Lifetime Membership Award for this work.</p>
+              </div>
+            </details>
+          </li>
+          <li data-track="community" data-start="2018-07" data-end="2021-01" data-short="Notre Dame English Club">
+            <details>
+              <summary><span class="org">Notre Dame English Club</span><span class="role">Member, then Assistant General Secretary</span><span class="dates">Jul 2018 &ndash; Jan 2021</span></summary>
+              <div class="item-body">
+                <p>Copywriting for publications and social media, then planning the club&rsquo;s annual publications during the pandemic. Helped run the country&rsquo;s largest English-language carnival for about 6,000 guests.</p>
+              </div>
+            </details>
+          </li>
+          <li data-track="science" data-start="2018-07" data-end="2020-06" data-short="HSC, Notre Dame College">
+            <details>
+              <summary><span class="org">Notre Dame College</span><span class="role">Higher Secondary Certificate, Science</span><span class="dates">Jul 2018 &ndash; Jun 2020</span></summary>
+              <div class="item-body">
+                <p>Before this, at Ideal School and College, I led the school&rsquo;s top debate team to an inter-school championship.</p>
+              </div>
+            </details>
+          </li>
+        </ol>
+      </div>
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="section container">
-      <div class="section-head reveal">
-        <p class="eyebrow">about</p>
-        <h2>the short version <span class="hand side-note">← psst, keep reading</span></h2>
-      </div>
-
-      <div class="bento">
-        <article class="card card-wide reveal">
-          <span class="card-ico">🎓</span>
-          <p class="eyebrow">currently</p>
-          <h3>Final-year Bioinformatics Engineering @ BAU</h3>
-          <p>Bangladesh Agricultural University, Faculty of Agricultural Engineering &amp; Technology, working where computational biology, scalable pipeline engineering and machine learning meet. Also co-founding a stealth-stage lifestyle brand.</p>
-          <p class="fun">🧪 part of the very first bioinformatics engineering cohort</p>
-        </article>
-
-        <article class="card reveal">
-          <span class="card-ico">📍</span>
-          <p class="eyebrow">based in</p>
-          <h3>Dhaka, Bangladesh</h3>
-          <p>Studying in Mymensingh, building from anywhere with a terminal.</p>
-          <p class="fun">🌧️ yes, I've forecast the rain here</p>
-        </article>
-
-        <article class="card reveal">
-          <span class="card-ico">🌐</span>
-          <p class="eyebrow">beyond code</p>
-          <h3>Wikimedia &amp; Open Knowledge</h3>
-          <p>Community builder, trainer and policy contributor across Wikimedia since 2020, from my college club to a global working group.</p>
-        </article>
-
-        <article class="card card-wide reveal">
-          <span class="card-ico">🧠</span>
-          <p class="eyebrow">what drives me</p>
-          <h3>Reliable tools &amp; open knowledge</h3>
-          <p>From germline variant calling to ML-powered web apps, I care about software researchers can trust and rerun. Off the terminal, I build communities that make knowledge and data openly accessible to everyone.</p>
-          <p class="fun">🧬 favourite trick: turning VCFs into reports nobody has to format by hand</p>
-        </article>
-
-        <article class="card card-full reveal">
-          <span class="card-ico">🏅</span>
-          <p class="eyebrow">certifications &amp; honours</p>
-          <ul class="cert-list">
-            <li>Certified Trainer, Reading Wikipedia in the Classroom <span class="muted">(Wikimedia Foundation)</span></li>
-            <li>Open Data Instructor Training for the Trainers <span class="muted">(Open Knowledge Foundation)</span></li>
+    <section class="section" id="about" aria-labelledby="about-h">
+      <div class="wrap about-grid">
+        <div>
+          <h2 id="about-h">About</h2>
+        </div>
+        <div class="prose">
+          <p>I study Bioinformatics Engineering at Bangladesh Agricultural University, in its first cohort. My work sits where computational biology, pipeline engineering and machine learning meet: I like software that other researchers can trust and run again.</p>
+          <p>The other half of my time goes to open knowledge. Since 2020 I&rsquo;ve built Wikipedia editing teams, trained teachers, drafted community policy and translated Wikimedia documents into Bangla. Both halves come down to the same thing: making information usable by more people.</p>
+          <h3>Certifications and honours</h3>
+          <ul class="plain-list">
+            <li>Certified Trainer, Reading Wikipedia in the Classroom (Wikimedia Foundation)</li>
+            <li>Open Data Instructor Training for the Trainers (Open Knowledge Foundation)</li>
             <li>Sociocracy Training</li>
             <li>Project Management Foundations</li>
             <li>Lewis Deep Democracy CoResolve Foundation</li>
-            <li>Honorary Lifetime Membership Award <span class="muted">(Notre Dame English Club)</span></li>
+            <li>Honorary Lifetime Membership Award, Notre Dame English Club</li>
           </ul>
-        </article>
-      </div>
-    </section>
-
-    <div class="divider" aria-hidden="true"></div>
-
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section container">
-      <div class="section-head reveal">
-        <p class="eyebrow">experience</p>
-        <h2>the path so far <span class="hand side-note">the journey ✨ ⟶</span></h2>
-      </div>
-
-      <ol class="timeline">
-        <li class="tl-item reveal">
-          <button class="tl-head" type="button" aria-expanded="false">
-            <span class="tl-ico">🚀</span>
-            <span class="tl-title"><strong>Stealth Startup</strong> <span class="muted">co-founder</span></span>
-            <span class="tl-date mono">2026 – present</span>
-            <span class="tl-caret" aria-hidden="true">⌃</span>
-          </button>
-          <div class="tl-body"><div>
-            <p>Building a direct-to-consumer lifestyle brand at the intersection of cultural documentation, narrative design and functional physical mediums.</p>
-            <ul>
-              <li>Leading end-to-end venture development: sourcing, local supply chain and high-craft production.</li>
-              <li>Directing brand positioning, visual identity and go-to-market strategy.</li>
-            </ul>
-          </div></div>
-        </li>
-
-        <li class="tl-item open reveal">
-          <button class="tl-head" type="button" aria-expanded="true">
-            <span class="tl-ico">🧬</span>
-            <span class="tl-title"><strong>Invent Technologies Ltd.</strong> <span class="muted">bioinformatician</span></span>
-            <span class="tl-date mono">jun – jul 2026</span>
-            <span class="tl-caret" aria-hidden="true">⌃</span>
-          </button>
-          <div class="tl-body"><div>
-            <p>Targeted NGS and multi-omics analysis plus pipeline automation for clinical genomics clients.</p>
-            <ul>
-              <li>Germline variant calling on Illumina MiSeq data (TruSight One 4,813-gene panel, GRCh38) with BWA-MEM, Samtools, Picard and GATK HaplotypeCaller.</li>
-              <li>Built a Python CLI reporting engine (docxtpl, Jinja2, headless LibreOffice) that turns pipeline metrics, coverage and VCFs into diagnostic Word/PDF reports.</li>
-              <li>Analysed bacterial WGS, 16S metagenomics (DADA2, SILVA), Sanger traces and bulk RNA-seq (DESeq2).</li>
-              <li>On-site consultation at the TMSS Biomolecular Lab, Bogura: Linux/Bash session and clinical NGS workflow assessment.</li>
-            </ul>
-          </div></div>
-        </li>
-
-        <li class="tl-item reveal">
-          <button class="tl-head" type="button" aria-expanded="false">
-            <span class="tl-ico">💡</span>
-            <span class="tl-title"><strong>University Innovation Hub Program</strong> <span class="muted">entrepreneurship trainee</span></span>
-            <span class="tl-date mono">2025 – 2026</span>
-            <span class="tl-caret" aria-hidden="true">⌃</span>
-          </button>
-          <div class="tl-body"><div>
-            <p>Entrepreneurship training programme in Mymensingh. Also lead coordinator &amp; organizer of <strong>Build with AI Hack Days @BAU</strong>, hosted by the Department of Computer Science and Mathematics.</p>
-          </div></div>
-        </li>
-
-        <li class="tl-item reveal">
-          <button class="tl-head" type="button" aria-expanded="false">
-            <span class="tl-ico">📖</span>
-            <span class="tl-title"><strong>Open Learning Collective</strong> <span class="muted">student fellow</span></span>
-            <span class="tl-date mono">2024 – 2025</span>
-            <span class="tl-caret" aria-hidden="true">⌃</span>
-          </button>
-          <div class="tl-body"><div>
-            <p>Student fellowship focused on open learning and open educational resources.</p>
-          </div></div>
-        </li>
-
-        <li class="tl-item reveal">
-          <button class="tl-head" type="button" aria-expanded="false">
-            <span class="tl-ico">📸</span>
-            <span class="tl-title"><strong>Project Korikath</strong> <span class="muted">co-founder &amp; strategic lead</span></span>
-            <span class="tl-date mono">2022 – 2025</span>
-            <span class="tl-caret" aria-hidden="true">⌃</span>
-          </button>
-          <div class="tl-body"><div>
-            <p>A Wikimedia group I co-founded and nurtured from inception, leading multi-year growth plans, trust &amp; safety guidance and partnerships.</p>
-            <ul>
-              <li>Contributors from 7+ countries, working in 11+ languages.</li>
-              <li>17,000+ media files used on 3,000+ Wikimedia pages, with 6M+ views.</li>
-            </ul>
-          </div></div>
-        </li>
-
-        <li class="tl-item reveal">
-          <button class="tl-head" type="button" aria-expanded="false">
-            <span class="tl-ico">✨</span>
-            <span class="tl-title"><strong>WikiVibrance</strong> <span class="muted">core team member</span></span>
-            <span class="tl-date mono">2022 – 2025</span>
-            <span class="tl-caret" aria-hidden="true">⌃</span>
-          </button>
-          <div class="tl-body"><div>
-            <p>Youth advocacy within the Wikimedia movement. South Asia contact and community management specialist; contributed to policy drafting and strategy.</p>
-          </div></div>
-        </li>
-
-        <li class="tl-item reveal">
-          <button class="tl-head" type="button" aria-expanded="false">
-            <span class="tl-ico">🌍</span>
-            <span class="tl-title"><strong>Wikimedia Foundation</strong> <span class="muted">trainer · working group · consultant</span></span>
-            <span class="tl-date mono">2021 – 2025</span>
-            <span class="tl-caret" aria-hidden="true">⌃</span>
-          </button>
-          <div class="tl-body"><div>
-            <ul>
-              <li><strong>Certified Trainer, Reading Wikipedia in the Classroom</strong>: training teachers to use Wikipedia for media &amp; information literacy (trained alongside peers from 18 countries).</li>
-              <li><strong>Leadership Development Working Group</strong>: youngest member and one of two South Asian representatives; helped define Wikimedia leadership and policy templates.</li>
-              <li><strong>Language Consultant</strong>: translated and localized policy and community documents into Bangla.</li>
-            </ul>
-          </div></div>
-        </li>
-
-        <li class="tl-item reveal">
-          <button class="tl-head" type="button" aria-expanded="false">
-            <span class="tl-ico">🏫</span>
-            <span class="tl-title"><strong>Bangladesh Agricultural University</strong> <span class="muted">BSc Bioinformatics Engineering</span></span>
-            <span class="tl-date mono">2022 – present</span>
-            <span class="tl-caret" aria-hidden="true">⌃</span>
-          </button>
-          <div class="tl-body"><div>
-            <p>Computer science, biomathematics, bioinformatics and computational biology, in the inaugural Bioinformatics Engineering cohort.</p>
-            <ul>
-              <li>Co-authored research on ML models for rainfall forecasting.</li>
-            </ul>
-          </div></div>
-        </li>
-
-        <li class="tl-item reveal">
-          <button class="tl-head" type="button" aria-expanded="false">
-            <span class="tl-ico">📝</span>
-            <span class="tl-title"><strong>Notre Dame English Club</strong> <span class="muted">founder, Wikipedia Editorial &amp; Research Team</span></span>
-            <span class="tl-date mono">2018 – present</span>
-            <span class="tl-caret" aria-hidden="true">⌃</span>
-          </button>
-          <div class="tl-body"><div>
-            <p>Introduced the Wikimedia movement to my college and built its Wikipedia Editorial &amp; Research Team from the ground up.</p>
-            <ul>
-              <li>Received the club's Honorary Lifetime Membership Award for leadership and community development.</li>
-              <li>Assistant General Secretary, Writing &amp; Publications (2020–21); helped run a carnival of ~6,000 guests and weekly sessions of ~300 members.</li>
-            </ul>
-          </div></div>
-        </li>
-
-        <li class="tl-item reveal">
-          <button class="tl-head" type="button" aria-expanded="false">
-            <span class="tl-ico">🎒</span>
-            <span class="tl-title"><strong>Notre Dame College</strong> <span class="muted">HSC, Science</span></span>
-            <span class="tl-date mono">2018 – 2020</span>
-            <span class="tl-caret" aria-hidden="true">⌃</span>
-          </button>
-          <div class="tl-body"><div>
-            <p>Higher Secondary Certificate in Science, Dhaka. Before that: Ideal School and College, where I led the school's top debate team to an inter-school championship.</p>
-          </div></div>
-        </li>
-      </ol>
-    </section>
-
-    <div class="divider" aria-hidden="true"></div>
-
-    <!-- WORK -->
-    <section id="work" class="section container">
-      <div class="section-head reveal">
-        <p class="eyebrow">selected work</p>
-        <h2>things i've built <span class="hand side-note">a few favourites ↓</span></h2>
-      </div>
-
-      <div class="work-grid">
-        <article class="work-card reveal">
-          <div class="work-top"><span class="card-ico">🔬</span><span class="tag mono">web app · ML</span></div>
-          <h3>r_u_promoter</h3>
-          <p>Interactive web app on Hugging Face Spaces that classifies promoter sequences with an XGBoost model, storing results in MongoDB Atlas.</p>
-          <div class="tags"><span>XGBoost</span><span>Hugging Face</span><span>MongoDB Atlas</span></div>
-        </article>
-
-        <article class="work-card reveal">
-          <div class="work-top"><span class="card-ico">📄</span><span class="tag mono">CLI · pipeline</span></div>
-          <h3>Target panel reporting engine</h3>
-          <p>Parses pipeline metrics, coverage and VCF data to auto-generate diagnostic Word/PDF reports and CSV summaries. No more manual formatting.</p>
-          <div class="tags"><span>Python</span><span>docxtpl</span><span>Jinja2</span><span>LibreOffice</span></div>
-        </article>
-
-        <article class="work-card reveal">
-          <div class="work-top"><span class="card-ico">🌧️</span><span class="tag mono">research</span></div>
-          <h3>Rainfall forecasting with ML</h3>
-          <p>Co-authored research comparing Random Forest, XGBoost, GRU and SARIMAX for rainfall estimation across regional stations, with model-specific missing-value imputation.</p>
-          <div class="tags"><span>Time series</span><span>GRU</span><span>SARIMAX</span></div>
-        </article>
-      </div>
-    </section>
-
-    <div class="divider" aria-hidden="true"></div>
-
-    <!-- EXPERTISE -->
-    <section id="expertise" class="section container">
-      <div class="section-head reveal">
-        <p class="eyebrow">expertise</p>
-        <h2>what i work with <span class="hand side-note">always sequencing more ⟶</span></h2>
-      </div>
-
-      <div class="skills">
-        <div class="skill-group reveal">
-          <p class="eyebrow">technical</p>
-          <div class="pills">
-            <span>NGS Data Analysis</span><span>Germline Variant Calling</span><span>Bacterial WGS</span><span>16S Metagenomics</span><span>RNA-seq</span><span>Sanger Analysis</span><span>Machine Learning</span><span>Time-series Forecasting</span>
-          </div>
-        </div>
-        <div class="skill-group reveal">
-          <p class="eyebrow">community &amp; leadership</p>
-          <div class="pills">
-            <span>Community Management</span><span>Policy Drafting</span><span>Trust &amp; Safety</span><span>Training &amp; Facilitation</span><span>Translation / Localization</span><span>Event Organizing</span><span>Business Ownership</span>
-          </div>
-        </div>
-        <div class="skill-group reveal">
-          <p class="eyebrow">tools &amp; platforms</p>
-          <div class="pills">
-            <span>Python</span><span>Bash</span><span>Linux</span><span>Micromamba</span><span>GATK</span><span>BWA-MEM</span><span>Samtools</span><span>Picard</span><span>SPAdes</span><span>Prokka</span><span>DADA2</span><span>DESeq2</span><span>XGBoost</span><span>Jinja2</span><span>MongoDB</span><span>Hugging Face</span><span>Git</span>
-          </div>
-        </div>
-        <div class="skill-group reveal">
-          <p class="eyebrow">domains</p>
-          <div class="pills">
-            <span>Clinical Genomics</span><span>Computational Biology</span><span>Environmental Data Science</span><span>Open Knowledge</span><span>GLAM Partnerships</span>
-          </div>
         </div>
       </div>
     </section>
 
-    <div class="divider" aria-hidden="true"></div>
-
-    <!-- CONNECT -->
-    <section id="connect" class="section container">
-      <div class="section-head reveal">
-        <p class="eyebrow">connect</p>
-        <h2>let's be friends</h2>
+    <!-- TOOLKIT -->
+    <section class="section" id="toolkit" aria-labelledby="toolkit-h">
+      <div class="wrap about-grid">
+        <div>
+          <h2 id="toolkit-h">Toolkit</h2>
+        </div>
+        <dl class="toolkit">
+          <div><dt>Sequencing analysis</dt><dd>Germline variant calling, bacterial whole-genome assembly, 16S metagenomics, bulk RNA-seq, Sanger traces</dd></div>
+          <div><dt>Bioinformatics tools</dt><dd>GATK, BWA-MEM, Samtools, Picard, SPAdes, Prokka, DADA2, DESeq2, UGENE, BLAST</dd></div>
+          <div><dt>Code and environment</dt><dd>Python, Bash, R, Linux, Micromamba, Git, Jinja2, docxtpl</dd></div>
+          <div><dt>Machine learning and data</dt><dd>XGBoost, Random Forest, gated recurrent units, SARIMAX, MongoDB, Hugging Face Spaces</dd></div>
+          <div><dt>Community work</dt><dd>Community management, policy drafting, trust and safety, training and facilitation, Bangla localization, event organizing</dd></div>
+        </dl>
       </div>
+    </section>
 
-      <div class="links">
-        <a class="link-row reveal" href="mailto:mrbrafi1971@gmail.com">
-          <span class="link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
-          <span class="link-text"><strong>Email</strong> <span class="muted">mrbrafi1971@gmail.com</span></span>
-          <span class="link-arrow">↗</span>
-        </a>
-        <a class="link-row reveal" href="https://www.linkedin.com/in/mrb-rafi/" target="_blank" rel="noopener">
-          <span class="link-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></span>
-          <span class="link-text"><strong>LinkedIn</strong> <span class="muted">mrb-rafi</span></span>
-          <span class="link-arrow">↗</span>
-        </a>
+    <!-- CONTACT -->
+    <section class="section contact" id="contact" aria-labelledby="contact-h">
+      <div class="wrap">
+        <h2 id="contact-h">Get in touch</h2>
+        <p class="section-intro">Email is the quickest way to reach me. I&rsquo;m open to bioinformatics roles, research collaborations and community projects.</p>
+        <a class="contact-email" href="mailto:mrbrafi1971@gmail.com">mrbrafi1971@gmail.com</a>
+        <p class="contact-alt"><a href="https://www.linkedin.com/in/mrb-rafi/" target="_blank" rel="noopener">LinkedIn: mrb-rafi</a></p>
       </div>
-      <p class="hand shy reveal">don't be shy, say hi!</p>
     </section>
   </main>
 
-  <footer class="footer container">
-    <span>© <span id="year">2026</span> M. Rafiul Bahar Rafi</span>
-    <span class="hand">made with 🧬 in bangladesh</span>
-    <span class="footer-links">
-      <a href="https://www.linkedin.com/in/mrb-rafi/" target="_blank" rel="noopener">linkedin</a>
-      <a href="mailto:mrbrafi1971@gmail.com">email</a>
-    </span>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy;&nbsp;<span id="year">2026</span> M. Rafiul Bahar Rafi</p>
+      <p>Dhaka, Bangladesh</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>

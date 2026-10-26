@@ -183,6 +183,25 @@ h3 { font-size: 1.35rem; letter-spacing: -0.005em; }
   display: block; color: var(--ink); font-size: 1.9rem; line-height: 1.1;
   font-variant-numeric: lining-nums tabular-nums; letter-spacing: -0.01em;
 }
+h4 { margin: 0; font-size: 1.35rem; font-weight: 700; line-height: 1.2; letter-spacing: -0.005em; hyphens: none; }
+.project-body .plain-list { margin-top: 10px; max-width: 64ch; }
+.project-body a, .prose a { text-decoration-color: var(--muted); }
+.project-body a:hover, .prose a:hover { text-decoration-color: currentColor; }
+
+/* the three work tracks; colours match the timeline's tracks */
+.track-jump { display: flex; flex-wrap: wrap; gap: 8px 10px; margin: 0 0 8px; }
+.track-jump a {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px;
+  border: 1px solid var(--rule); border-radius: 8px; text-decoration: none; font-size: 0.95rem;
+}
+.track-jump a::before { content: ''; width: 10px; height: 10px; border-radius: 2px; background: var(--track); }
+.track-jump a:hover { border-color: var(--ink); }
+.track-group { margin-top: clamp(40px, 6vw, 64px); scroll-margin-top: 80px; }
+.group-title {
+  display: flex; align-items: center; gap: 12px;
+  font-size: clamp(1.4rem, 1.1rem + 1vw, 1.75rem); margin-bottom: 18px;
+}
+.group-title::before { content: ''; width: 14px; height: 14px; border-radius: 3px; background: var(--track); flex: none; }
 
 /* ---------- path: genome browser ---------- */
 .browser { margin-top: 36px; }

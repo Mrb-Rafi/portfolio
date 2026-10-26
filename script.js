@@ -47,7 +47,7 @@
       });
     }, { rootMargin: '-45% 0px -50% 0px' });
     // 'top' (the hero) matches no link, so it clears the highlight
-    ['top', 'work', 'path', 'about', 'toolkit', 'contact'].forEach(function (id) {
+    ['top', 'work', 'path', 'writing', 'about', 'contact'].forEach(function (id) {
       spy.observe(document.getElementById(id));
     });
   }

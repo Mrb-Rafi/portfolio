@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>M. Rafiul Bahar Rafi</title>
-  <meta name="description" content="M. Rafiul Bahar Rafi builds genomic pipelines and machine-learning tools, and organizes communities that make knowledge free to use. Based in Dhaka, Bangladesh." />
+  <meta name="description" content="M. Rafiul Bahar Rafi: bioinformatics engineering student in clinical NGS analysis, open knowledge organizer and grant-funded project manager, based in Dhaka, Bangladesh." />
   <meta property="og:title" content="M. Rafiul Bahar Rafi" />
-  <meta property="og:description" content="Bioinformatics engineer and open-knowledge organizer from Dhaka, Bangladesh." />
+  <meta property="og:description" content="Bioinformatics, open knowledge, and operations: the work of M. Rafiul Bahar Rafi, Dhaka, Bangladesh." />
   <meta property="og:image" content="assets/rafi.jpg" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2315211D'/%3E%3Cpath d='M4 22c3 0 3-12 6-12s3 12 6 12 3-12 6-12 3 12 6 12' fill='none' stroke='%234CC27F' stroke-width='2.4'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,8 +31,8 @@
       <nav class="nav" id="nav" aria-label="Sections">
         <a href="#work">Work</a>
         <a href="#path">Path</a>
+        <a href="#writing">Writing</a>
         <a href="#about">About</a>
-        <a href="#toolkit">Toolkit</a>
         <a href="#contact">Contact</a>
       </nav>
       <div class="header-actions">
@@ -54,7 +54,7 @@
         <div class="hero-text">
           <h1>M. Rafiul Bahar Rafi</h1>
           <p class="lede">I build genomic pipelines and machine-learning tools, and I organize communities that make knowledge free to use.</p>
-          <p class="sub">Final-year Bioinformatics Engineering student at Bangladesh Agricultural University, based in Dhaka.</p>
+          <p class="sub">Final-year Bioinformatics Engineering student at Bangladesh Agricultural University, graduating in December 2026. Based in Dhaka.</p>
           <div class="actions">
             <a class="btn btn-primary" href="mailto:mrbrafi1971@gmail.com">Email me</a>
             <a class="btn btn-quiet" href="https://www.linkedin.com/in/mrb-rafi/" target="_blank" rel="noopener">View LinkedIn</a>
@@ -72,71 +72,169 @@
       </div>
     </section>
 
-    <!-- WORK -->
+    <!-- WORK, grouped by track -->
     <section class="section" id="work" aria-labelledby="work-h">
       <div class="wrap">
         <h2 id="work-h">Selected work</h2>
-        <p class="section-intro">Tools I&rsquo;ve built and projects I&rsquo;ve led, with what each one changed.</p>
+        <p class="section-intro">My work runs on three tracks. Each entry links to a public record where one exists.</p>
+        <nav class="track-jump" aria-label="Work tracks">
+          <a href="#bioinformatics" data-track="science">Bioinformatics</a>
+          <a href="#open-knowledge" data-track="community">Open knowledge</a>
+          <a href="#operations" data-track="venture">Operations and grants</a>
+        </nav>
 
-        <article class="project">
-          <div class="project-meta">
-            <p class="kind">Clinical genomics tool</p>
-            <p class="when">Invent Technologies, 2026</p>
-          </div>
-          <div class="project-body">
-            <h3>Target panel reporting engine</h3>
-            <p>Diagnostic reports for TruSight One panel runs were being formatted by hand. I wrote a Python command-line tool that reads the pipeline&rsquo;s metrics, coverage and VCF files and produces finished Word and PDF reports with CSV summaries.</p>
-            <dl class="facts">
-              <div><dt>My part</dt><dd>Design and build, end to end</dd></div>
-              <div><dt>Built with</dt><dd>Python, docxtpl, Jinja2, headless LibreOffice</dd></div>
-              <div><dt>Result</dt><dd>Report formatting no longer needs manual work</dd></div>
-            </dl>
-          </div>
-        </article>
+        <!-- Track 1 -->
+        <div class="track-group" id="bioinformatics" data-track="science">
+          <h3 class="group-title">Bioinformatics</h3>
 
-        <article class="project">
-          <div class="project-meta">
-            <p class="kind">Open-knowledge project</p>
-            <p class="when">Project Korikath, 2022&ndash;2025</p>
-          </div>
-          <div class="project-body">
-            <h3>Project Korikath</h3>
-            <p>A Wikimedia group I co-founded and led as strategic lead: multi-year growth plans, trust and safety guidance, and partnerships with contributors across 7&nbsp;countries and 11&nbsp;languages.</p>
-            <ul class="figures">
-              <li><strong>17,000+</strong> media files created</li>
-              <li><strong>3,000+</strong> Wikimedia pages using them</li>
-              <li><strong>6&nbsp;million+</strong> views</li>
-            </ul>
-          </div>
-        </article>
+          <article class="project">
+            <div class="project-meta">
+              <p class="kind">Clinical genomics</p>
+              <p class="when">Invent Technologies, Jun &ndash; Jul 2026</p>
+            </div>
+            <div class="project-body">
+              <h4>Germline variant calling and an automated reporting engine</h4>
+              <p>As a bioinformatics intern, I ran germline variant calling on Illumina MiSeq data from the TruSight One panel (4,813 genes, GRCh38) with BWA-MEM, Samtools, Picard and GATK HaplotypeCaller, following GATK Best Practices. Reports were being formatted by hand, so I wrote a Python command-line tool that reads the pipeline&rsquo;s metrics, coverage and VCF files and produces finished Word and PDF reports with CSV summaries.</p>
+              <dl class="facts">
+                <div><dt>My part</dt><dd>Variant-calling runs; design and build of the reporting engine; on-site requirement mapping at a client lab in Bogura</dd></div>
+                <div><dt>Built with</dt><dd>GATK, BWA-MEM, Samtools, Picard, Python, docxtpl, Jinja2, headless LibreOffice</dd></div>
+                <div><dt>Result</dt><dd>Report formatting no longer needs manual work</dd></div>
+              </dl>
+            </div>
+          </article>
 
-        <article class="project">
-          <div class="project-meta">
-            <p class="kind">Machine-learning web app</p>
-            <p class="when">Personal project</p>
-          </div>
-          <div class="project-body">
-            <h3>r_u_promoter</h3>
-            <p>Paste a DNA sequence and find out whether it&rsquo;s likely a promoter. An XGBoost classifier runs behind an interactive app on Hugging Face Spaces, and predictions are stored in MongoDB Atlas.</p>
-            <dl class="facts">
-              <div><dt>Built with</dt><dd>Python, XGBoost, Hugging Face Spaces, MongoDB Atlas</dd></div>
-            </dl>
-          </div>
-        </article>
+          <article class="project">
+            <div class="project-meta">
+              <p class="kind">Machine learning</p>
+              <p class="when">Personal project</p>
+            </div>
+            <div class="project-body">
+              <h4>r_u_promoter</h4>
+              <p>Paste a DNA sequence and find out whether it&rsquo;s likely a promoter. An XGBoost classifier trained on 60,000 labelled gene sequences (98% accuracy) runs behind an interactive app, and predictions are stored in MongoDB Atlas.</p>
+              <dl class="facts">
+                <div><dt>Built with</dt><dd>Python, XGBoost, Hugging Face Spaces, MongoDB Atlas</dd></div>
+                <div><dt>Try it</dt><dd><a href="https://huggingface.co/spaces/alphakitty/r_u_promoter" target="_blank" rel="noopener">huggingface.co/spaces/alphakitty/r_u_promoter</a></dd></div>
+              </dl>
+            </div>
+          </article>
 
-        <article class="project">
-          <div class="project-meta">
-            <p class="kind">Research</p>
-            <p class="when">Bangladesh Agricultural University</p>
-          </div>
-          <div class="project-body">
-            <h3>Forecasting rainfall with machine learning</h3>
-            <p>Co-authored a study comparing Random Forest, XGBoost, gated recurrent units and SARIMAX for estimating rainfall across regional weather stations, using a different missing-value strategy for each model.</p>
-            <dl class="facts">
-              <div><dt>Built with</dt><dd>Python, time-series models, model-specific imputation</dd></div>
-            </dl>
-          </div>
-        </article>
+          <article class="project">
+            <div class="project-meta">
+              <p class="kind">Research</p>
+              <p class="when">Bangladesh Agricultural University</p>
+            </div>
+            <div class="project-body">
+              <h4>Forecasting rainfall with machine learning</h4>
+              <p>Co-authored a study comparing Random Forest, XGBoost, gated recurrent units and SARIMAX for estimating rainfall across regional weather stations, using a different missing-value strategy for each model.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Track 2 -->
+        <div class="track-group" id="open-knowledge" data-track="community">
+          <h3 class="group-title">Open knowledge</h3>
+
+          <article class="project">
+            <div class="project-meta">
+              <p class="kind">Co-founder and strategic lead</p>
+              <p class="when">Project Korikath, 2022&ndash;2025</p>
+            </div>
+            <div class="project-body">
+              <h4>Project Korikath</h4>
+              <p>An independent community of photographers and videographers documenting under-represented places and culture for Wikimedia Commons. I set its multi-year strategy, trust and safety guidance and partnerships, and managed the grant that bought its first camera. The project has kept growing since my term ended; its totals as of October 2026:</p>
+              <ul class="figures">
+                <li><strong>96,000+</strong> files from 640 contributors</li>
+                <li><strong>7,900+</strong> pages on 193 wikis use them</li>
+                <li><strong>33</strong> Commons Pictures of the Day</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-meta">
+              <p class="kind">Founder and trainer</p>
+              <p class="when">Notre Dame College, 2020&ndash;present</p>
+            </div>
+            <div class="project-body">
+              <h4>NDEC Wikipedia Editorial and Research Team</h4>
+              <p>A student team I built from scratch to teach high schoolers open knowledge work. It began with taking our college&rsquo;s Bangla Wikipedia article to Featured Article in four months, managing the conflict of interest in the open. Since then I have run its training: one bootcamp enrolled 128 students and produced 300 new Bangla Wikipedia articles, and a 2024 workshop reached 150&ndash;200 students. Alumni founded the Dhaka University Wikipedia Editorial and Research Team in 2026, which I advise and mentor.</p>
+              <dl class="facts">
+                <div><dt>Talk</dt><dd><a href="https://meta.wikimedia.org/wiki/EduWiki_Conference_2023/Program/Lightning_talks_5" target="_blank" rel="noopener">EduWiki Conference 2023, Belgrade</a></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-meta">
+              <p class="kind">Working group member</p>
+              <p class="when">Wikimedia Foundation, 2022&ndash;2023</p>
+            </div>
+            <div class="project-body">
+              <h4>Leadership Development Working Group</h4>
+              <p>One of 15 members chosen from several hundred applicants worldwide, the youngest, and one of two South Asian representatives. Working across languages and time zones, we wrote the movement&rsquo;s shared definition of leadership and its Leadership Development Plan.</p>
+              <dl class="facts">
+                <div><dt>Record</dt><dd><a href="https://diff.wikimedia.org/2022/05/16/announcing-the-members-of-the-leadership-development-working-group/" target="_blank" rel="noopener">Member announcement on Diff</a></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-meta">
+              <p class="kind">Certified trainer</p>
+              <p class="when">2021&ndash;2025</p>
+            </div>
+            <div class="project-body">
+              <h4>Media literacy and open data training</h4>
+              <p>Certified by the Wikimedia Foundation to train secondary-school teachers in Reading Wikipedia in the Classroom, one of 73 trainers worldwide, and by the Open Knowledge Foundation to train people on Open Data Editor in Bangladesh.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Track 3 -->
+        <div class="track-group" id="operations" data-track="venture">
+          <h3 class="group-title">Operations and grants</h3>
+
+          <article class="project">
+            <div class="project-meta">
+              <p class="kind">Grant management</p>
+              <p class="when">Since 2022</p>
+            </div>
+            <div class="project-body">
+              <h4>Four grant-funded projects, reported to donors</h4>
+              <ul class="plain-list">
+                <li><strong>WikiCred grant, Project Korikath:</strong> bought the team&rsquo;s first camera, which has since produced 31,750 files, 34.6% of the project&rsquo;s collection.</li>
+                <li><strong>Wiki Loves Folklore Bangladesh 2025:</strong> a Wikimedia Foundation Rapid Fund grant.</li>
+                <li><strong>Chak language project:</strong> documentation, digitization and revitalization.</li>
+                <li><strong>Garo oral culture:</strong> documentation under a small grant for Indic oral cultures.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-meta">
+              <p class="kind">Project manager</p>
+              <p class="when">Sep 2024 &ndash; Sep 2025</p>
+            </div>
+            <div class="project-body">
+              <h4>Wiki Loves Folklore Bangladesh 2025</h4>
+              <p>Ran a nationwide photo campaign from funding to closure: purchases, brand guide, volunteer call, selection and training, handbook, campaign, jury, prize-giving and the final grant report. I also led the self-funded 2024 editions of Wiki Loves Folklore and Wiki Loves Earth in Bangladesh; a Bangladeshi entry took the international first prize in Folklore, and four Bangladeshi images reached the international winners in Earth.</p>
+              <dl class="facts">
+                <div><dt>Record</dt><dd><a href="https://meta.wikimedia.org/wiki/Wiki_Loves_Folklore_Bangladesh_2025" target="_blank" rel="noopener">Campaign page on Meta-Wiki</a></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-meta">
+              <p class="kind">Scholarship committee</p>
+              <p class="when">2025</p>
+            </div>
+            <div class="project-body">
+              <h4>Wikimedia Youth Conference 2025, Prague</h4>
+              <p>Designed the scholarship evaluation framework, scored and selected applicants for South Asia and for East, Southeast Asia and the Pacific, and briefed the evaluators for three other regions with applicant information my team had gathered.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -169,14 +267,22 @@
           </li>
           <li data-track="science" data-start="2026-06" data-end="2026-07" data-short="Invent Technologies">
             <details>
-              <summary><span class="org">Invent Technologies Ltd.</span><span class="role">Bioinformatician</span><span class="dates">Jun &ndash; Jul 2026</span></summary>
+              <summary><span class="org">Invent Technologies Ltd.</span><span class="role">Bioinformatics intern</span><span class="dates">Jun &ndash; Jul 2026</span></summary>
               <div class="item-body">
                 <ul>
                   <li>Germline variant calling on Illumina MiSeq data (TruSight One, 4,813 genes, GRCh38) with BWA-MEM, Samtools, Picard and GATK HaplotypeCaller.</li>
                   <li>Built the reporting engine that turns pipeline output into diagnostic Word and PDF reports.</li>
-                  <li>Analysed bacterial whole genomes (SPAdes, Prokka), 16S metagenomics (DADA2, SILVA), Sanger traces and bulk RNA-seq (DESeq2).</li>
-                  <li>Ran a Linux and Bash session and assessed clinical NGS workflows on site at the TMSS Biomolecular Lab, Bogura.</li>
+                  <li>Introductory exposure to bacterial genome assembly, 16S metagenomics, Sanger sequencing and bulk RNA-seq.</li>
+                  <li>Mapped requirements and supported a Linux and Bash session on site at the TMSS Biomolecular Lab, Bogura.</li>
                 </ul>
+              </div>
+            </details>
+          </li>
+          <li data-track="community" data-start="2026-01" data-short="Dhaka University team">
+            <details>
+              <summary><span class="org">Dhaka University Wikipedia Editorial and Research Team</span><span class="role">Advisor and mentor</span><span class="dates">2026 &ndash; present</span></summary>
+              <div class="item-body">
+                <p>A team founded in 2026 by University of Dhaka students, most of them alumni of the NDEC team I trained.</p>
               </div>
             </details>
           </li>
@@ -188,11 +294,19 @@
               </div>
             </details>
           </li>
-          <li data-track="community" data-start="2024-03" data-end="2025-09" data-short="Open Learning Collective">
+          <li data-track="community" data-start="2024-09" data-end="2025-09" data-short="WLF Bangladesh 2025">
             <details>
-              <summary><span class="org">Open Learning Collective</span><span class="role">Student fellow</span><span class="dates">Mar 2024 &ndash; Sep 2025</span></summary>
+              <summary><span class="org">Wiki Loves Folklore Bangladesh 2025</span><span class="role">Project manager</span><span class="dates">Sep 2024 &ndash; Sep 2025</span></summary>
               <div class="item-body">
-                <p>Fellowship on open learning and open educational resources. I&rsquo;m also certified by the Open Knowledge Foundation to train people on Open Data Editor.</p>
+                <p>Ran the national campaign on a Wikimedia Foundation Rapid Fund grant, from funding and volunteer training to the jury, prize-giving and the final grant report.</p>
+              </div>
+            </details>
+          </li>
+          <li data-track="community" data-start="2024-03" data-end="2025-06" data-short="Open Learning Collective">
+            <details>
+              <summary><span class="org">Open Learning Collective</span><span class="role">Open knowledge fellow</span><span class="dates">Mar 2024 &ndash; Jun 2025</span></summary>
+              <div class="item-body">
+                <p>Ran a qualitative research project on how education stakeholders experienced the political transition after the July 2024 uprising.</p>
               </div>
             </details>
           </li>
@@ -208,7 +322,7 @@
             <details>
               <summary><span class="org">Project Korikath</span><span class="role">Co-founder and strategic lead</span><span class="dates">Sep 2022 &ndash; Feb 2025</span></summary>
               <div class="item-body">
-                <p>Grew a Wikimedia group to contributors from 7&nbsp;countries working in 11&nbsp;languages. Together we created 17,000+ media files, now used on 3,000+ Wikimedia pages with more than 6&nbsp;million views.</p>
+                <p>Set strategy, trust and safety guidance and partnerships, and managed the WikiCred grant. The project has since grown to 96,000+ files from 640 contributors, used on 7,900+ pages across 193 wikis (October 2026).</p>
               </div>
             </details>
           </li>
@@ -216,7 +330,7 @@
             <details>
               <summary><span class="org">Wikimedia Foundation</span><span class="role">Language consultant</span><span class="dates">Aug 2022 &ndash; Jun 2023</span></summary>
               <div class="item-body">
-                <p>Translated and localized policy documents and community notices into Bangla.</p>
+                <p>Translated and localized policy documents and community notices into Bangla, including the Universal Code of Conduct.</p>
               </div>
             </details>
           </li>
@@ -224,15 +338,7 @@
             <details>
               <summary><span class="org">Wikimedia Foundation</span><span class="role">Leadership Development Working Group</span><span class="dates">May 2022 &ndash; Sep 2023</span></summary>
               <div class="item-body">
-                <p>The youngest member and one of two South Asian representatives. We defined what leadership means in the Wikimedia movement and wrote templates for local leadership programmes.</p>
-              </div>
-            </details>
-          </li>
-          <li data-track="science" data-start="2022-01" data-short="BSc Bioinformatics Eng., BAU">
-            <details>
-              <summary><span class="org">Bangladesh Agricultural University</span><span class="role">BSc Bioinformatics Engineering</span><span class="dates">Jan 2022 &ndash; present</span></summary>
-              <div class="item-body">
-                <p>Computer science, biomathematics, bioinformatics and computational biology, in the university&rsquo;s first Bioinformatics Engineering cohort.</p>
+                <p>Chosen from several hundred applicants; the youngest member and one of two South Asian representatives. We defined what leadership means in the Wikimedia movement and wrote its Leadership Development Plan.</p>
               </div>
             </details>
           </li>
@@ -240,7 +346,15 @@
             <details>
               <summary><span class="org">Wikimedia Foundation</span><span class="role">Certified trainer, Reading Wikipedia in the Classroom</span><span class="dates">Dec 2021 &ndash; Feb 2025</span></summary>
               <div class="item-body">
-                <p>Trained secondary-school teachers to use Wikipedia to build their students&rsquo; media and information literacy, after a training cohort with peers from 18&nbsp;countries. I also handle communication design and funding for the global trainer community.</p>
+                <p>Trained secondary-school teachers to use Wikipedia to build their students&rsquo; media and information literacy, after a training cohort with peers from 18&nbsp;countries.</p>
+              </div>
+            </details>
+          </li>
+          <li data-track="science" data-start="2020-07" data-short="BSc Bioinformatics Eng., BAU">
+            <details>
+              <summary><span class="org">Bangladesh Agricultural University</span><span class="role">BSc Bioinformatics Engineering</span><span class="dates">2020 &ndash; Dec 2026 (expected)</span></summary>
+              <div class="item-body">
+                <p>Computer science, biomathematics, bioinformatics and computational biology. Latest semester GPA 3.81 out of 4.00.</p>
               </div>
             </details>
           </li>
@@ -264,7 +378,7 @@
             <details>
               <summary><span class="org">Notre Dame College</span><span class="role">Higher Secondary Certificate, Science</span><span class="dates">Jul 2018 &ndash; Jun 2020</span></summary>
               <div class="item-body">
-                <p>Before this, at Ideal School and College, I led the school&rsquo;s top debate team to an inter-school championship.</p>
+                <p>GPA 5.00 out of 5.00. Before this, at Ideal School and College (SSC, GPA 5.00), I led the debate teams to two intra-school championships and one inter-school championship.</p>
               </div>
             </details>
           </li>
@@ -272,21 +386,62 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- WRITING AND TALKS -->
+    <section class="section" id="writing" aria-labelledby="writing-h">
+      <div class="wrap about-grid">
+        <div>
+          <h2 id="writing-h">Writing and talks</h2>
+        </div>
+        <div class="prose">
+          <h3>Bigganchinta (Bangla popular science)</h3>
+          <ul class="plain-list">
+            <li><a href="https://www.bigganchinta.com/feature/7tbg4rpj07" target="_blank" rel="noopener" lang="bn">উইকিমিডিয়া: বিশ্বজুড়ে জ্ঞান উন্মুক্ত করার এক চলমান আন্দোলন</a> (Wikimedia: an ongoing movement to open knowledge worldwide), October 2024</li>
+            <li><a href="https://www.bigganchinta.com/technology/on9sebicqx" target="_blank" rel="noopener" lang="bn">উইকিমিডিয়া: যেভাবে উন্মুক্ত লাইসেন্সের আওতায় বিশ্বজুড়ে জ্ঞান হলো উন্মুক্ত</a> (How knowledge became free worldwide under open licenses), October 2024</li>
+            <li><a href="https://www.bigganchinta.com/technology/3y5sjscu8s" target="_blank" rel="noopener" lang="bn">যেভাবে উইকি থেকে জন্ম নিল উইকিমিডিয়া</a> (How Wikimedia was born from wiki), November 2024</li>
+            <li><a href="https://www.bigganchinta.com/technology/vg3njbaru0" target="_blank" rel="noopener" lang="bn">উইকিপিডিয়া কি তথ্যসূত্র হিসেবে বিশ্বাসযোগ্য</a> (Is Wikipedia trustworthy as a source?), December 2024</li>
+          </ul>
+          <h3>Diff, the Wikimedia movement&rsquo;s blog</h3>
+          <ul class="plain-list">
+            <li>&ldquo;Project Korikath celebrates its first birthday!&rdquo;, September 2023</li>
+            <li>&ldquo;Looking back on a year of building a movement leadership development plan&rdquo;, October 2023 (co-author)</li>
+            <li>&ldquo;Wikimedia X Rocket Science: Project Korikath makes ties with AERD&rdquo;, October 2023</li>
+            <li><a href="https://diff.wikimedia.org/2024/01/17/celebrating-wikipedias-birthday-with-25-usd/" target="_blank" rel="noopener">&ldquo;Celebrating Wikipedia&rsquo;s Birthday with 25 USD&rdquo;</a>, January 2024</li>
+            <li>&ldquo;Celebrating the International Mother Language Day&rdquo;, March 2024</li>
+            <li>&ldquo;Bullets, Deaths &amp; Wikimedians: The Struggle to Ensure Continued Access to Free Knowledge during Conflicts&rdquo;</li>
+          </ul>
+          <h3>Talks and media</h3>
+          <ul class="plain-list">
+            <li><a href="https://meta.wikimedia.org/wiki/EduWiki_Conference_2023/Program/Lightning_talks_5" target="_blank" rel="noopener">&ldquo;NDEC Wikipedia Editorial and Research Team: An experiment on Wikimedia education&rdquo;</a>, EduWiki Conference 2023, Belgrade (full scholarship)</li>
+            <li>Wikimania 2023, Singapore (full scholarship)</li>
+            <li><a href="https://www.youtube.com/watch?v=y_Zxqbhaz9E" target="_blank" rel="noopener">Live panel on Wikipedia&rsquo;s birthday</a>, Jamuna TV, January 2025</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT, TOOLKIT, CERTIFICATIONS -->
     <section class="section" id="about" aria-labelledby="about-h">
       <div class="wrap about-grid">
         <div>
           <h2 id="about-h">About</h2>
         </div>
         <div class="prose">
-          <p>I study Bioinformatics Engineering at Bangladesh Agricultural University, in its first cohort. My work sits where computational biology, pipeline engineering and machine learning meet: I like software that other researchers can trust and run again.</p>
-          <p>The other half of my time goes to open knowledge. Since 2020 I&rsquo;ve built Wikipedia editing teams, trained teachers, drafted community policy and translated Wikimedia documents into Bangla. Both halves come down to the same thing: making information usable by more people.</p>
+          <p>I study Bioinformatics Engineering at Bangladesh Agricultural University. My technical work sits where computational biology, pipeline engineering and machine learning meet: I like software that other researchers can trust and run again.</p>
+          <p>The other half of my time has gone to open knowledge. Since 2020 I&rsquo;ve built editing and photography teams, trained teachers and students, managed grants, and helped write policy for a global movement. Both halves come down to the same thing: making information usable by more people.</p>
+          <h3>Toolkit</h3>
+          <dl class="toolkit">
+            <div><dt>Genomics and NGS</dt><dd>FASTQ to VCF pipelines, GATK Best Practices, BWA-MEM, Samtools, Picard, variant filtering and annotation</dd></div>
+            <div><dt>Basic familiarity</dt><dd>SPAdes, Prokka, DADA2, DESeq2, BLAST</dd></div>
+            <div><dt>Code and environment</dt><dd>Python, Bash, Linux, Micromamba, Git; R and SQL at a basic level</dd></div>
+            <div><dt>Machine learning and data</dt><dd>XGBoost, Random Forest, scikit-learn, gated recurrent units, SARIMAX, pandas, MongoDB, Hugging Face Spaces</dd></div>
+            <div><dt>Open knowledge and operations</dt><dd>Community management, volunteer recruitment and training, grant management and reporting, evaluation frameworks, trust and safety, Bangla localization</dd></div>
+          </dl>
           <h3>Certifications and honours</h3>
           <ul class="plain-list">
-            <li>Certified Trainer, Reading Wikipedia in the Classroom (Wikimedia Foundation)</li>
-            <li>Open Data Instructor Training for the Trainers (Open Knowledge Foundation)</li>
-            <li>Sociocracy Training</li>
-            <li>Project Management Foundations</li>
+            <li>Open Data and Open Data Editor Trainer, Open Knowledge Foundation (2025)</li>
+            <li>Project Management Foundations, Project Management Institute (2024)</li>
+            <li>Sociocracy Training, Sinergia Comunicativa (2022)</li>
+            <li>Certified Trainer, Reading Wikipedia in the Classroom, Wikimedia Foundation (2021)</li>
             <li>Lewis Deep Democracy CoResolve Foundation</li>
             <li>Honorary Lifetime Membership Award, Notre Dame English Club</li>
           </ul>
@@ -294,27 +449,11 @@
       </div>
     </section>
 
-    <!-- TOOLKIT -->
-    <section class="section" id="toolkit" aria-labelledby="toolkit-h">
-      <div class="wrap about-grid">
-        <div>
-          <h2 id="toolkit-h">Toolkit</h2>
-        </div>
-        <dl class="toolkit">
-          <div><dt>Sequencing analysis</dt><dd>Germline variant calling, bacterial whole-genome assembly, 16S metagenomics, bulk RNA-seq, Sanger traces</dd></div>
-          <div><dt>Bioinformatics tools</dt><dd>GATK, BWA-MEM, Samtools, Picard, SPAdes, Prokka, DADA2, DESeq2, UGENE, BLAST</dd></div>
-          <div><dt>Code and environment</dt><dd>Python, Bash, R, Linux, Micromamba, Git, Jinja2, docxtpl</dd></div>
-          <div><dt>Machine learning and data</dt><dd>XGBoost, Random Forest, gated recurrent units, SARIMAX, MongoDB, Hugging Face Spaces</dd></div>
-          <div><dt>Community work</dt><dd>Community management, policy drafting, trust and safety, training and facilitation, Bangla localization, event organizing</dd></div>
-        </dl>
-      </div>
-    </section>
-
     <!-- CONTACT -->
     <section class="section contact" id="contact" aria-labelledby="contact-h">
       <div class="wrap">
         <h2 id="contact-h">Get in touch</h2>
-        <p class="section-intro">Email is the quickest way to reach me. I&rsquo;m open to bioinformatics roles, research collaborations and community projects.</p>
+        <p class="section-intro">Email is the quickest way to reach me. I&rsquo;m open to bioinformatics roles, operations and program roles, research collaborations and open knowledge projects. A CV is available on request.</p>
         <a class="contact-email" href="mailto:mrbrafi1971@gmail.com">mrbrafi1971@gmail.com</a>
         <p class="contact-alt"><a href="https://www.linkedin.com/in/mrb-rafi/" target="_blank" rel="noopener">LinkedIn: mrb-rafi</a></p>
       </div>
